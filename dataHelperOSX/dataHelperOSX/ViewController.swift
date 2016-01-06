@@ -65,7 +65,7 @@ class ViewController: NSViewController {
         data!.writeToFile(plistPath!, atomically: true)
         //let resultDictionary = NSMutableDictionary(contentsOfFile: path)
         //print("Saved testPlist.plist file is --> \(resultDictionary?.description)")
-        
+        print(NSBundle.mainBundle())
     }
 
 
