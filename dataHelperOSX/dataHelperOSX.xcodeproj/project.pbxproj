@@ -13,8 +13,11 @@
 		DEF07F9C1C3CF27200F7B98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF07F9A1C3CF27200F7B98A /* Main.storyboard */; };
 		DEF07FA41C3CF33000F7B98A /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF07FA31C3CF33000F7B98A /* CSV.swift */; };
 		DEF07FA71C3CF62200F7B98A /* testCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = DEF07FA51C3CF62200F7B98A /* testCSV.csv */; };
-		DEF07FAC1C3D01DE00F7B98A /* testPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF07FAB1C3D01DE00F7B98A /* testPlist.plist */; };
 		DEF07FAE1C3D156600F7B98A /* mapPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF07FAD1C3D156600F7B98A /* mapPlist.plist */; };
+		DEF07FB61C3E4EE200F7B98A /* AesEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF07FB11C3E4EE200F7B98A /* AesEncode.m */; };
+		DEF07FB71C3E4EE200F7B98A /* Base64codeFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF07FB31C3E4EE200F7B98A /* Base64codeFunc.m */; };
+		DEF07FB81C3E4EE200F7B98A /* stringAes.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF07FB51C3E4EE200F7B98A /* stringAes.m */; };
+		DEF07FBF1C3E5A2900F7B98A /* testPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF07FBE1C3E5A2900F7B98A /* testPlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,15 @@
 		DEF07F9D1C3CF27200F7B98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF07FA31C3CF33000F7B98A /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		DEF07FA51C3CF62200F7B98A /* testCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testCSV.csv; sourceTree = "<group>"; };
-		DEF07FAB1C3D01DE00F7B98A /* testPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testPlist.plist; sourceTree = "<group>"; };
 		DEF07FAD1C3D156600F7B98A /* mapPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mapPlist.plist; sourceTree = "<group>"; };
+		DEF07FAF1C3E4EE100F7B98A /* dataHelperOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dataHelperOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEF07FB01C3E4EE200F7B98A /* AesEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesEncode.h; sourceTree = "<group>"; };
+		DEF07FB11C3E4EE200F7B98A /* AesEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesEncode.m; sourceTree = "<group>"; };
+		DEF07FB21C3E4EE200F7B98A /* Base64codeFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64codeFunc.h; sourceTree = "<group>"; };
+		DEF07FB31C3E4EE200F7B98A /* Base64codeFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64codeFunc.m; sourceTree = "<group>"; };
+		DEF07FB41C3E4EE200F7B98A /* stringAes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringAes.h; sourceTree = "<group>"; };
+		DEF07FB51C3E4EE200F7B98A /* stringAes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stringAes.m; sourceTree = "<group>"; };
+		DEF07FBE1C3E5A2900F7B98A /* testPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testPlist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +73,45 @@
 				DEF07F941C3CF27200F7B98A /* AppDelegate.swift */,
 				DEF07F961C3CF27200F7B98A /* ViewController.swift */,
 				DEF07FA31C3CF33000F7B98A /* CSV.swift */,
-				DEF07FA51C3CF62200F7B98A /* testCSV.csv */,
-				DEF07FAB1C3D01DE00F7B98A /* testPlist.plist */,
-				DEF07FAD1C3D156600F7B98A /* mapPlist.plist */,
+				DEF07FB91C3E4EF500F7B98A /* encode */,
+				DEF07FBA1C3E4F1C00F7B98A /* dataCSV */,
+				DEF07FBB1C3E4F2E00F7B98A /* dataPlist */,
 				DEF07F981C3CF27200F7B98A /* Assets.xcassets */,
 				DEF07F9A1C3CF27200F7B98A /* Main.storyboard */,
 				DEF07F9D1C3CF27200F7B98A /* Info.plist */,
 			);
 			path = dataHelperOSX;
+			sourceTree = "<group>";
+		};
+		DEF07FB91C3E4EF500F7B98A /* encode */ = {
+			isa = PBXGroup;
+			children = (
+				DEF07FB01C3E4EE200F7B98A /* AesEncode.h */,
+				DEF07FB11C3E4EE200F7B98A /* AesEncode.m */,
+				DEF07FB21C3E4EE200F7B98A /* Base64codeFunc.h */,
+				DEF07FB31C3E4EE200F7B98A /* Base64codeFunc.m */,
+				DEF07FB41C3E4EE200F7B98A /* stringAes.h */,
+				DEF07FB51C3E4EE200F7B98A /* stringAes.m */,
+				DEF07FAF1C3E4EE100F7B98A /* dataHelperOSX-Bridging-Header.h */,
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		DEF07FBA1C3E4F1C00F7B98A /* dataCSV */ = {
+			isa = PBXGroup;
+			children = (
+				DEF07FA51C3CF62200F7B98A /* testCSV.csv */,
+			);
+			name = dataCSV;
+			sourceTree = "<group>";
+		};
+		DEF07FBB1C3E4F2E00F7B98A /* dataPlist */ = {
+			isa = PBXGroup;
+			children = (
+				DEF07FAD1C3D156600F7B98A /* mapPlist.plist */,
+				DEF07FBE1C3E5A2900F7B98A /* testPlist.plist */,
+			);
+			name = dataPlist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF07FAE1C3D156600F7B98A /* mapPlist.plist in Resources */,
+				DEF07FBF1C3E5A2900F7B98A /* testPlist.plist in Resources */,
 				DEF07FA71C3CF62200F7B98A /* testCSV.csv in Resources */,
-				DEF07FAC1C3D01DE00F7B98A /* testPlist.plist in Resources */,
 				DEF07F991C3CF27200F7B98A /* Assets.xcassets in Resources */,
 				DEF07F9C1C3CF27200F7B98A /* Main.storyboard in Resources */,
 			);
@@ -147,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF07F971C3CF27200F7B98A /* ViewController.swift in Sources */,
+				DEF07FB61C3E4EE200F7B98A /* AesEncode.m in Sources */,
+				DEF07FB81C3E4EE200F7B98A /* stringAes.m in Sources */,
 				DEF07F951C3CF27200F7B98A /* AppDelegate.swift in Sources */,
 				DEF07FA41C3CF33000F7B98A /* CSV.swift in Sources */,
+				DEF07FB71C3E4EE200F7B98A /* Base64codeFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +294,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = dataHelperOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shadowpower.dataHelperOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dataHelperOSX/dataHelperOSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,11 +309,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = dataHelperOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shadowpower.dataHelperOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dataHelperOSX/dataHelperOSX-Bridging-Header.h";
 			};
 			name = Release;
 		};
