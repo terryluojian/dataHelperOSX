@@ -58,13 +58,7 @@ class ViewController: NSViewController {
             data?.setValue(value["content"], forKey: value["id"]!)
             print(data)
         }
-        
-        //let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
-        //let documentsDirectory = paths.objectAtIndex(0) as! NSString
-        //let path = documentsDirectory.stringByAppendingPathComponent("testPlist.plist")
         data!.writeToFile(plistPath!, atomically: true)
-        //let resultDictionary = NSMutableDictionary(contentsOfFile: path)
-        //print("Saved testPlist.plist file is --> \(resultDictionary?.description)")
         print(NSBundle.mainBundle())
     }
 
